@@ -1,0 +1,270 @@
+/* ------- google fonts ------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /*---------- Common Style-----------*/
+  
+  body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .flexible-container {
+      padding: 0 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-image: url(images/Circle-design.svg);
+  }
+  
+  /*-------top-section-----------*/
+  
+  .a-color{
+      color: #E02C6D;
+  }
+  .btn {
+      outline: 0;
+      border: 0;
+      padding: 10px 35px;
+      background-color: #E02C6D;
+      font-weight: 600;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 50px;
+      cursor: pointer;
+      position: relative;
+      top: 0;
+      font-size: 15px;
+  }
+nav {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+label.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+label.logo a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.navbar-items{
+    display: flex;
+}
+.navbar-items li{
+    list-style: none;
+    margin: 10px;
+}
+.navbar-items li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+.horizontal{
+    background-color: gray;
+    margin-top: 10px;
+}
+.checkbutton{
+    font-size: 25px;
+    color: #000;
+    float: left;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* Header Banner Section Style  */
+
+.bannerimg {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 30px;
+}
+
+.bannerimg-site-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bannerimg-site-left h1 {
+    font-size: 50px;
+}
+
+.bannerimg-site-left h2 {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.bannerimg-site p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.bannerimg-site-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bannerimg-site-right img {
+    width: 100%;
+}
+
+/* Popular Collection Style  */
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.items-section-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px;
+    color: #3A3A3A;
+}
+.item {
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    line-height: 2;
+    border-radius: 5px;
+}
+.item img{
+    width: 100%;
+}
+
+.item h2{
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #18191F;
+}
+
+.item p{
+    margin-top: 10px;
+    color: #787885;
+}
+
+span{
+    margin-left: 5px;
+}
+
+.star {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #ffc014;
+}
+
+.fa-star.empty {
+    color: #aeaeae;
+    opacity: 0.5;
+}
+
+.item-price {
+    font-family: "Inter";
+    font-size: 24px;
+  }
+  .see-more {
+    text-align: right;
+    margin: 20px;
+}
+
+.see-more a {
+    text-decoration: none;
+}
+
+
+/* Footer Style */
+
+.footer{
+    background: #0A0826;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer-content p{
+      color: #D9DBE1;
+      font-size: 14px;
+      line-height: 2;
+}
+.socal-link{
+    margin-top: 14px;
+}
+ .socal-link .icon{
+   width: 32px;
+   height: 32px;
+   color: #fff;
+   background: #ffffff1e;
+   line-height: 32px;
+   border-radius: 50%;
+   cursor: pointer;
+   margin: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .bannerimg {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bannerimg-site-left h1 {
+        font-size: 28px;
+    }
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bannerimg-site-left, .btn{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .button{
+        padding: 15px 40px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    
+    .section-title h2{
+        font-size: 18px;
+    }
+    .bannerimg-site-left p {
+        font-size: 14px;
+    }
+}
+
